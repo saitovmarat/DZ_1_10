@@ -6,11 +6,11 @@ namespace DZ_1_10
     {
         static string kv_ur(double a, double b, double c)
         {
-                double d = b * b - 4 * a * c;
-                double x1 = (-b + Math.Sqrt(d)) / (2 * a);
-                double x2 = (-b - Math.Sqrt(d)) / (2 * a);
-                string otv = $"x1 = {x1}, x2 = {x2}";
-                return otv;
+            double d = b * b - 4 * a * c;
+            double x1 = (-b + Math.Sqrt(d)) / (2 * a);
+            double x2 = (-b - Math.Sqrt(d)) / (2 * a);
+            string otv = $"x1 = {x1}, x2 = {x2}";
+            return otv;
         }
         static void Main(string[] args)
         {
@@ -51,27 +51,38 @@ namespace DZ_1_10
 
 
             Console.WriteLine("Task 3");
-            int[] numbers = new int[] {1, 2, 4, 3, 5, 6};
-            int qw = 0;
+            int[] numbers = { 1, 3, 2, 4, 6, 5 };
+            int qw;
             for (int w = 0; w < numbers.Length; w++)
             {
-                for (int e = 1; e < numbers.Length-1-w; e++)
+                for (int e = 0; e < numbers.Length - 1 - w; e++)
                 {
-                    if (numbers[w] > numbers[e])
+                    if (numbers[e] > numbers[e + 1])
                     {
-                        qw = numbers[w];
-                        numbers[w] = numbers[e];
-                        numbers[e] = qw;
-                    }                    
+                        qw = numbers[e];
+                        numbers[e] = numbers[e + 1];
+                        numbers[e + 1] = qw;
+                    }
                 }
             }
-            for (int r = 0; r<numbers.Length; r++)
+            for (int r = 0; r < numbers.Length; r++)
             {
-                Console.Write($"{numbers[r]}, ");
+                Console.Write(numbers[r] + " ");
             }
+            Console.ReadKey();
+            Console.Clear();
 
 
-
+            Console.WriteLine("Task 4");
+        }
+        static int par(params int[] parametrs)
+        {
+            int result = 0;
+            for (int t = 0; t < parametrs.Length; t++)
+            {
+                result += parametrs[t];
+            }
+            return result;
         }
     }
 }

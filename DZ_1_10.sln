@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.32802.440
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "дз", "DZ_1_10\дз.csproj", "{80C5ABAF-FFC2-42AF-B617-DD56A74B6CD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "кр", "кр\кр.csproj", "{C093DE7C-BB91-467E-8254-6CCA3235D238}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "кр", "кр\кр.csproj", "{C093DE7C-BB91-467E-8254-6CCA3235D238}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Черновик", "Черновик\Черновик.csproj", "{780C28BB-47E2-454B-BD6A-3F6CAB4C7D33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{C093DE7C-BB91-467E-8254-6CCA3235D238}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C093DE7C-BB91-467E-8254-6CCA3235D238}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C093DE7C-BB91-467E-8254-6CCA3235D238}.Release|Any CPU.Build.0 = Release|Any CPU
+		{780C28BB-47E2-454B-BD6A-3F6CAB4C7D33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{780C28BB-47E2-454B-BD6A-3F6CAB4C7D33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{780C28BB-47E2-454B-BD6A-3F6CAB4C7D33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{780C28BB-47E2-454B-BD6A-3F6CAB4C7D33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
