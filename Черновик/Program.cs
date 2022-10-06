@@ -1,29 +1,27 @@
 ﻿using System;
+using System.Threading;
 
 namespace Черновик
 {
     class Program
     {
-        static void Main(string[] args)
+        static int[] Task7(int[] strs)
         {
-            Console.WriteLine("Задание 10");
-            int[] bubble = { 52, 44, 13, 26, 1 };
-            int var;
-            for (int i = 0; i < bubble.Length; i++)
+            int[] str = new int[strs.Length]; 
+            Array.Sort(strs);
+            for (int i = 0; i < strs.Length; i++)
             {
-                for (int j = 0; j < bubble.Length - 1 - i; j++)
-                {
-                    if (bubble[j] > bubble[j + 1])
-                    {
-                        var = bubble[j];
-                        bubble[j] = bubble[j + 1];
-                        bubble[j + 1] = var;
-                    }
-                }
+                str[i] = strs[i];
             }
-            for (int k = 0; k < bubble.Length; k++)
+            return str;
+                
+        }
+        static void Main()
+        {
+            int[] strs = new int[] { 1, 3, 4, 2, 5 };
+            for (int i = 0; i < Task7(strs).Length; i++)
             {
-                Console.Write(bubble[k] + " ");
+                Console.Write(Task7(strs)[i] + " ");
             }
             Console.ReadKey();
             Console.Clear();
